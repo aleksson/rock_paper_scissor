@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RockPaperScissor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="showGame">
+  
+  <h1>Rock, Paper, Scissors</h1>
+
+  <section>
+      <button class="options rock" value="1" color="#f16450" title="Rock"> <img src="./rock1.png"> </button>
+      <button class="options paper" value="2" color="#62bcba" title="Paper"> <img src="./paper1.png"> </button>
+      <button class="options scissor" value="3" color="#f5bc49" title="Scissor"> <img src="./scissor1.png"> </button>
+    </section>
+  
+    <main>
+      <div class="info" hidden="hidden">
+        <h3 class="result">Result:</h3>
+        <p class="result-rounds">
+          You: <b class="result-player">0</b>, Computer: <b class="result-computer">0</b><br><hr>
+          Rounds Left: <b class="rounds">3/3</b><br>
+        </p>
+        <a href="index.html" id="replay" hidden>
+          <button value="reset" title="Reset"> Reload </button>
+        </a>
+      </div>
+    </main>
+      
+    
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="./load.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+body{
+  font-family: "Poppins";
+  text-align: center;
+  font-size: 1.4em;
+}
+main {
+  display:flex;
+  
+  flex-direction: column;
+}
+
+section{
+  display:flex;
+  justify-content: space-evenly;
+}
+section img{
+  border-radius: 50%;
+  max-height: 160px;
+}
+
+.options {
+  border: none;
+  background: transparent;
+}
+
+.options:hover{
+  cursor: pointer;
+  background: rgb(202, 202, 202);
+}
+button{
+  border-radius: 80px;
+}
+
+body.gameDone { 
+  z-index: 0;
+  display: block;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    
+  }
+  section{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items:center;
+  }
+  section img{
+    max-height: 160px;
+    border-radius: 80px;
+  }
+}
+
+@media only screen and (min-width: 756px) {
+  body {
+    
+  }
+  section{
+    /* height: 400px;
+    width: 230px; */
+    margin: 6em;
+  }
+  button{
+    
+  }
+}
